@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies | Luxury Dining Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
+</head>
+<body>  
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="Foodies Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
+              aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Our Story</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#explore-food">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonial">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                    <button class="main-btn">Reservation</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container-fluid px-0 top-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8">
+                        <h1>Savor the Art of Fine Dining.</h1>
+                        <p>Experience an unforgettable culinary journey at Foodies. We blend exquisite ingredients with masterful techniques to create dishes that delight the senses and elevate your palate.</p>
+                        <div class="mt-5">
+                            <button class="main-btn">View Menu <i class="fas fa-utensils ps-2"></i></button>
+                            <button class="white-btn ms-lg-3 mt-3 mt-lg-0">Book a Table <i class="fas fa-angle-right ps-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="counter" class="counter-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-4">
+                    <h2><span id="count1">0</span>+</h2>
+                    <p>Premium Dishes</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-4">
+                    <h2><span id="count2">0</span>+</h2>
+                    <p>Awards Won</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-4">
+                    <h2><span id="count3">0</span>+</h2>
+                    <p>Happy Guests</p>
+                </div>
+                <div class="col-md-3 mb-lg-0 mb-md-0 mb-4">
+                    <h2><span id="count4">0</span>+</h2>
+                    <p>Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-section wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 mb-lg-0 mb-5">
+                        <div class="card border-0 image-hover-effect">
+                            <img src="./assets/img/img-1.png" class="img-fluid" alt="Gourmet Dish">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-sec px-lg-5">
+                        <h2>A Symphony of Flavors, Crafted with Passion.</h2>
+                        <p>At Foodies, we pride ourselves on delivering an extraordinary dining experience. Our executive chefs meticulously source the finest, ethically produced ingredients to craft modern masterpieces rooted in classic culinary traditions.</p>
+                        <button class="main-btn mt-4">Discover Our Story</button>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="container food-type mt-5">
+                <div class="row align-items-center flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 col-md-12 text-sec pe-lg-5 mt-5 mt-lg-0">
+                        <h2>Perfection in Every Detail.</h2>
+                        <p>Our kitchen is a theater of taste, where every element is prepared by hand to ensure unparalleled quality. We believe that true luxury lies in the harmony of flavor, texture, and presentation.</p>
+                        <ul class="list-unstyled py-3">
+                            <li>Exclusive seasonal tasting menus.</li>
+                            <li>Award-winning sommelier wine pairings.</li>
+                            <li>Impeccable, personalized tableside service.</li>
+                        </ul>
+                        <button class="main-btn mt-4">Meet the Chefs</button>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card border-0 image-hover-effect">
+                            <img src="./assets/img/img-2.png" class="img-fluid" alt="Chef Preparing Food">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="story-section">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="row w-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="text-content">
+                        <h2>"Dining is not merely about eating; it is an emotional experience, an art form that brings people together."</h2>
+                        <p class="text-white mt-4">— Executive Chef, Foodies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="explore-food" class="explore-food wrapper bg-light-custom">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Explore Our Signature Menu</h2>
+                    <p>Indulge in our carefully curated selection of epicurean delights, designed to offer a balance of rich flavors and elegant presentation.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card premium-card">
+                        <div class="img-wrapper">
+                            <img src="./assets/img/img-3.jpg" class="img-fluid" alt="Menu Item">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4>Panuozzo sandwich</h4>
+                            <p class="text-muted small mb-2">Artisan sourdough, organic greens, white truffle aioli</p>
+                            <span class="price">$24.00</span>
+                            <button class="mt-3 outline-btn w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card premium-card">
+                        <div class="img-wrapper">
+                            <img src="./assets/img/img-4.jpg" class="img-fluid" alt="Menu Item">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4>Wagyu & Portobello Burger</h4>
+                            <p class="text-muted small mb-2">Premium wagyu blend, aged cheddar, brioche bun</p>
+                            <span class="price">$38.00</span>
+                            <button class="mt-3 outline-btn w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card premium-card">
+                        <div class="img-wrapper">
+                            <img src="./assets/img/img-5.jpg" class="img-fluid" alt="Menu Item">
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <h4>Raspberry & Mascarpone Toast</h4>
+                            <p class="text-muted small mb-2">Vanilla bean mascarpone, fresh berries, gold leaf</p>
+                            <span class="price">$18.50</span>
+                            <button class="mt-3 outline-btn w-100">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial" class="testimonial-section">
+        <div class="container text-center">
+            <div class="text-center pb-5">
+                <h2 class="text-white">Guest Experiences</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner shadow-lg rounded-4 bg-white p-5">
+                            <div class="carousel-item active">
+                                <img src="./assets/review/review-1.jpg" alt="Reviewer 1">
+                                <p class="fst-italic mt-4">"Absolutely loved the experience! The food was bursting with flavor and cooked to perfection.
+                                     Every bite felt fresh and well-balanced. The presentation was beautiful, and you could really tell that quality
+                                      ingredients were used. The spices were just right — not too overpowering, not too bland."</p>
+                                <h5 class="mt-4">Shyam Kumar Chaurasiya</h5>
+                                <span class="text-muted small">Web Developer</span>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./assets/review/review-2.jpg" alt="Reviewer 2">
+                                <p class="fst-italic mt-4">"The food was good overall with decent portion sizes and nice presentation. 
+                                    The flavors were enjoyable, though a few dishes could have been a bit more seasoned.
+                                    The service was polite and quick, which added to the positive experience."</p>
+                                <h5 class="mt-4">Gaurishankr Sah</h5>
+                                <span class="text-muted small">AIML Engineer</span>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./assets/review/review-3.jpg" alt="Reviewer 3">
+                                <p class="fst-italic mt-4">"A delightful culinary experience that blends taste and texture beautifully. 
+                                    The dish offered a perfect harmony of flavors — crispy on the outside, tender and juicy inside.
+                                    The aroma itself was inviting, and the plating reflected attention to detail."</p>
+                                <h5 class="mt-4">Byas</h5>
+                                <span class="text-muted small">Master</span>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-indicators custom-indicators mt-4">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq wrapper bg-light-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center pb-5">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+            </div>
+            <div class="row pt-2">
+                <div class="col-lg-6 mb-4 px-lg-4">
+                    <div class="faq-box">
+                        <h4><i class="fas fa-gem text-gold me-2"></i> Do you require reservations?</h4>
+                        <p>While we do accommodate walk-ins when possible, we highly recommend making a reservation in advance to guarantee your table, especially on weekends.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 px-lg-4">
+                    <div class="faq-box">
+                        <h4><i class="fas fa-gem text-gold me-2"></i> What is the dress code?</h4>
+                        <p>We kindly request our guests to dress in smart casual or elegant evening wear. Athletic wear and flip-flops are not permitted in the main dining room.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 px-lg-4">
+                    <div class="faq-box">
+                        <h4><i class="fas fa-gem text-gold me-2"></i> Do you cater to dietary restrictions?</h4>
+                        <p>Absolutely. Our culinary team is happy to accommodate vegan, gluten-free, and allergy-specific requests. Please mention these when booking.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 px-lg-4">
+                    <div class="faq-box">
+                        <h4><i class="fas fa-gem text-gold me-2"></i> Can I host a private event?</h4>
+                        <p>Yes, Foodies offers an exclusive private dining room perfect for corporate gatherings or intimate celebrations. Contact our events team for details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book-food" class="book-food">
+        <div class="container book-food-text">
+            <div class="row align-items-center text-center text-lg-start">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-0">Elevate Your Evening. Reserve Your Table Today.</h2>
+                    <p class="text-light mt-2 d-lg-none">Secure your spot for an unforgettable dining experience.</p>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0 text-lg-end">
+                    <button class="main-btn">Book a Reservation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="text-content pb-4">
+                        <h2>Join Our Exclusive Culinary Club</h2>
+                        <p>Subscribe to receive invitations to private tasting events, seasonal menu launches, and chef's specials.</p>
+                    </div>
+                    <form class="newsletter-form shadow-sm">
+                        <div class="input-group input-group-lg">
+                            <input class="form-control border-0 px-4" placeholder="Enter your email address" name="email" type="email" required>
+                            <button class="main-btn rounded-0" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+                    <h3 class="text-gold mb-3 logo-font">Foodies</h3>
+                    <p class="text-light-grey small">Redefining modern luxury dining with a commitment to culinary excellence and impeccable service.</p>
+                </div>
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <a class="footer-link d-block d-md-inline" href="#">Menu</a>
+                    <a class="footer-link d-block d-md-inline mt-2 mt-md-0" href="#">Reservations</a>
+                    <a class="footer-link d-block d-md-inline mt-2 mt-md-0" href="#">Private Events</a>
+                    <a class="footer-link d-block d-md-inline mt-2 mt-md-0" href="#">Contact</a>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top border-dark">
+                <div class="col-12 text-center">
+                    <p class="text-light-grey small mb-0">&copy; 2024 Foodies Premium Dining. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

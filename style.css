@@ -1,0 +1,256 @@
+/*
+===================================
+     Luxury Variable Setup
+===================================
+*/
+:root {
+    --primary-color: #D4AF37; /* Luxury Gold */
+    --primary-color-hover: #b5952f;
+    --secondary-color: #1A1A1A; /* Deep Charcoal/Black */
+    --light-bg: #FDFBF7; /* Off-White/Cream */
+    --white-color: #ffffff;
+    --text-color: #4A4A4A;
+    --text-grey: #888888;
+    
+    /* Using direct link fonts from HTML */
+    --heading-font: 'Cormorant Garamond', serif;
+    --body-font: 'Jost', sans-serif;
+    
+    --transition-speed: 0.3s;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--light-bg); }
+::-webkit-scrollbar-thumb { background: var(--primary-color); }
+
+/*
+=======================================
+     Typography & Global Styles
+=======================================
+*/
+h1, h2, h3, h4, .logo-font {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+h1 { font-size: 4.5rem; font-weight: 600; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -1px; }
+h2 { font-size: 3rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.5px; }
+h4 { font-size: 1.8rem; font-weight: 600; }
+h5 { font-family: var(--body-font); color: var(--primary-color); font-size: 1.1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+p { line-height: 1.8; letter-spacing: 0.3px; font-weight: 400; }
+a { text-decoration: none; transition: color var(--transition-speed) ease; }
+
+.text-gold { color: var(--primary-color) !important; }
+.text-light-grey { color: #aaaaaa !important; }
+.bg-light-custom { background-color: var(--light-bg); }
+.wrapper { padding: 4rem 0; }
+
+/*
+=======================================
+     Buttons
+=======================================
+*/
+.main-btn, .white-btn, .outline-btn {
+    display: inline-block;
+    padding: 0.8rem 2.2rem;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+.main-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 1px solid var(--primary-color);
+}
+.main-btn:hover {
+    background-color: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
+    transform: translateY(-2px);
+    color: var(--white-color);
+}
+
+.white-btn {
+    background-color: transparent;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+.white-btn:hover {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.outline-btn {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+.outline-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+/*
+=======================================
+     Header & Navigation
+=======================================
+*/
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent;
+    transition: all 0.4s ease;
+    padding: 1rem 0;
+}
+.navigation-wrap.scroll-on {
+    background-color: var(--white-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 0.5rem 0;
+}
+.navigation-wrap .navbar-brand img { height: 45px; transition: height 0.3s; }
+.nav-link {
+    font-family: var(--body-font); font-size: 0.95rem; font-weight: 500;
+    text-transform: uppercase; color: var(--white-color) !important;
+    letter-spacing: 1px; padding: 0.5rem 1rem !important;
+}
+.navigation-wrap.scroll-on .nav-link { color: var(--secondary-color) !important; }
+.nav-link:hover, .nav-link.active { color: var(--primary-color) !important; }
+.navbar-toggler { border: none; outline: none; box-shadow: none; }
+.navbar-toggler i { color: var(--primary-color); font-size: 1.5rem; }
+
+/*
+=======================================
+     Sections Styling
+=======================================
+*/
+/* Top Banner */
+.top-banner {
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/bg/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 12rem 0 8rem;
+    color: var(--white-color);
+}
+.top-banner h1, .top-banner p { color: var(--white-color); }
+
+/* Counter Section */
+.counter-section { background-color: var(--secondary-color); padding: 3rem 0; color: var(--primary-color); }
+.counter-section h2 { color: var(--primary-color); font-size: 3rem; margin-bottom: 0.5rem; font-family: var(--body-font); font-weight: 600; }
+.counter-section p { color: var(--white-color); font-weight: 400; letter-spacing: 2px; text-transform: uppercase; }
+
+/* About Section */
+.image-hover-effect { overflow: hidden; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.image-hover-effect img { transition: transform 0.5s ease; }
+.image-hover-effect:hover img { transform: scale(1.05); }
+.food-type ul li { position: relative; padding-left: 2rem; margin-bottom: 1rem; }
+.food-type ul li::before {
+    content: '\f00c'; font-family: "Font Awesome 5 Free"; font-weight: 900;
+    position: absolute; left: 0; color: var(--primary-color);
+}
+
+/* Story Section */
+.story-section {
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('./assets/bg/bg-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center fixed;
+    background-size: cover;
+    padding: 5rem 0; 
+}
+.story-section h2 { color: var(--white-color); font-style: italic; font-weight: 400; line-height: 1.5; }
+
+/* Explore Food / Menu */
+.premium-card {
+    border: none; border-radius: 0; background: var(--white-color);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03); transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.premium-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.premium-card .img-wrapper { overflow: hidden; }
+.premium-card img { width: 100%; height: 250px; object-fit: cover; transition: transform 0.5s ease; }
+.premium-card:hover img { transform: scale(1.08); }
+.premium-card .price {
+    font-family: var(--body-font); font-size: 1.3rem; color: var(--primary-color);
+    font-weight: 600; display: block; margin: 1rem 0;
+}
+
+/* Testimonial Section */
+.testimonial-section { background-color: var(--secondary-color); padding: 5rem 0; }
+.testimonial-section img {
+    width: 150px; height: 150px; object-fit: cover;
+    border-radius: 50%; border: 3px solid var(--primary-color);
+}
+.custom-indicators { position: static; margin-top: 2rem; }
+.custom-indicators button {
+    width: 10px !important; height: 10px !important; border-radius: 50%;
+    background-color: #ddd !important; border: none !important;
+    margin: 0 5px !important; padding: 0 !important; text-indent: -999px !important;
+}
+.custom-indicators button.active { background-color: var(--primary-color) !important; }
+
+/* FAQ Section */
+.faq-box {
+    background: var(--white-color); padding: 2rem; border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02); height: 100%; transition: transform 0.3s ease;
+}
+.faq-box:hover { transform: translateY(-5px); }
+
+/* Book Food */
+.book-food {
+    background-color: var(--secondary-color); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/bg/bg-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center fixed;
+    background-size: cover;
+    padding: 6rem 0;
+}
+
+/* Newsletter */
+.newsletter-form .form-control {
+    background: var(--white-color); border: 1px solid #eee; font-family: var(--body-font); font-weight: 400;
+}
+.newsletter-form .form-control:focus { box-shadow: none; border-color: var(--primary-color); }
+
+/* Footer */
+.footer { background-color: var(--secondary-color); color: var(--white-color); }
+.footer .footer-link {
+    font-family: var(--body-font); font-weight: 500;
+    color: var(--text-grey); text-transform: uppercase; font-size: 0.85rem;
+    letter-spacing: 1px; margin: 0 10px;
+}
+.footer .footer-link:hover { color: var(--primary-color) !important; }
+.footer-social a {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.05);
+    color: var(--white-color); margin: 0 5px; transition: all var(--transition-speed);
+}
+.footer-social a:hover { background: var(--primary-color); transform: translateY(-3px); }
