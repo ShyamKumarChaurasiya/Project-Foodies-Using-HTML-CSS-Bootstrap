@@ -1,0 +1,60 @@
+/* Tablet & Medium Devices */
+@media (max-width: 991px) {
+    .navigation-wrap {
+        background-color: var(--secondary-color);
+        padding: 10px 0;
+    }
+    .navigation-wrap.scroll-on {
+        background-color: var(--white-color);
+    }
+    .navigation-wrap .nav-link {
+        color: var(--white-color) !important;
+        text-align: center;
+        padding: 10px 0 !important;
+    }
+    .navigation-wrap.scroll-on .nav-link {
+        color: var(--secondary-color) !important;
+    }
+    .navigation-wrap .main-btn {
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    h1 { font-size: 3.5rem; }
+    .top-banner { padding: 8rem 0 6rem; text-align: center; }
+}
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2.2rem; }
+    
+    .wrapper { padding: 3rem 0; }
+    .top-banner { padding: 7rem 0 5rem; }
+    .story-section { padding: 4rem 0; }
+    
+    .counter-section h2 { font-size: 2.5rem; }
+    
+    .food-type { padding-top: 2rem !important; }
+    
+    .testimonial-section .carousel-inner {
+        padding: 2rem !important;
+    }
+    
+    .newsletter-form .input-group {
+        flex-direction: column;
+    }
+    .newsletter-form .main-btn {
+        width: 100%;
+    }
+    
+    .book-food { text-align: center; padding: 4rem 0; }
+}
+
+/* Smallest Devices */
+@media (max-width: 330px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    .testimonial-section .carousel-inner { padding: 1.5rem !important; }
+}
